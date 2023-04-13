@@ -41,8 +41,6 @@ char* Edit_admin_password(int decision)
 {   if(decision==1){
     char admin_password[20];
     char new_admin_password[20];
-    printf("Enter your current password:\n");
-    scanf("%d",&admin_password);
     printf("Enter your new password:");
     scanf("%s",&new_admin_password);
     AdminPassword(new_admin_password,1);}
