@@ -16,7 +16,7 @@ void system_mode()
       }
       else if (mode == 2)
       {
-         //user_mode();
+         user_mode();
          break;
       }
       else
@@ -28,8 +28,7 @@ void admin_mode()
    int ad_mode_choice = 0, ad_pass_attempts = 0;
    char ad_pass[20];
 
-   //char *admin_pass = (char *)malloc(strlen(ad_pass) + 1);
-   //strcpy(admin_pass, );
+   
    for (ad_pass_attempts; ad_pass_attempts < 3; ad_pass_attempts++)
    {
       printf("Enter your password please to enter admin's mode: \n");
