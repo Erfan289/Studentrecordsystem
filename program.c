@@ -147,6 +147,7 @@ void removeStudent(int id) {
         arr[myIndex(id)].password = "NULL";
         arr[myIndex(id)].id=0;
         newSizeOfClass(0);
+        printf("the student has been removed successfully\n\n");
 
 
 }
