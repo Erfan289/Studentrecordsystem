@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
-//#include "system.h"
-#include "test.h"
+#include "system.h"
 int main()
 {
-    admin_mode();
-    printf("Hello world!\n");
+    
+    printf("welcome ,sir:)");
+    system_mode();
     return 0;
 }
