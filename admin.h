@@ -10,6 +10,7 @@ View_student_record();
 char* Edit_admin_password();
 void Edit_student_grade();
 View_all_records();
+int DECIsion;
 
 
 
