@@ -2,7 +2,10 @@
 #include "system.h"
 
 void system_mode()
-{
+{  if(DECision==0){
+    Edit_your_password(0,0);
+    Edit_your_name(0,0);
+    DECision=1;}
    int mode;
    do
    {
@@ -109,15 +112,13 @@ void user_mode()
 {
    char us_pass[20];
    int us_id = 0, user_id = 0;
-   char *user_pass = (char *)malloc(strlen(us_pass) + 1);
-   *user_pass = 0;
    for (int user_pass_attempts = 0; user_pass_attempts < 3; user_pass_attempts++)
    {
       printf("Enter your password please to enter user mode: ");
       scanf("%s", user_pass);
       printf("Enter your ID please: ");
       scanf("%d", &us_id);
-      if (us_pass == user_pass && us_id == user_id)
+      if (!strcmp(Edit_your_password(us_id,2),us_pass))
       {
          while (1)
          {
@@ -139,12 +140,12 @@ void user_mode()
                break;
 
             case 2:
-               Edit_your_password(us_id);
+               Edit_your_password(us_id,2);
 
                break;
 
             case 3:
-               Edit_your_name(us_id);
+               Edit_your_name(us_id,1);
 
                break;
 
