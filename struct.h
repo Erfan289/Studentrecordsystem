@@ -24,4 +24,5 @@ student arr[30]={
 }
 };
 char *name[20];
+char *pass[20];
 char *adminPass;
