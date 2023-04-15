@@ -4,7 +4,6 @@
 
 
 #endif // USER_H_INCLUDED
-
 View_your_record();
 char* Edit_your_password();
 Edit_your_name();
