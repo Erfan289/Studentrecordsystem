@@ -43,7 +43,6 @@ char* Edit_admin_password(int decision)
     char new_admin_password[20];
     printf("Enter your new password:");
     scanf("%s",&new_admin_password);#include "admin.h"
-#include "program.h"
  void Add_student_record(){
 char name[20];
     char student_password[20];
