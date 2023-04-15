@@ -4,7 +4,6 @@
 
 
 #endif // STRUCT_H_INCLUDED
-#include "user.h"
 typedef struct student{
 int age;
 int id;
@@ -26,3 +25,4 @@ student arr[30]={
 char *name[20];
 char *pass[20];
 char *adminPass;
+
