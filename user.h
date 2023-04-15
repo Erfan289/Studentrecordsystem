@@ -4,10 +4,7 @@
 
 
 #endif // USER_H_INCLUDED
-#include <stdio.h>
-#include <stdlib.h>
-#include "user.h"
 
 View_your_record();
-Edit_your_password();
+char* Edit_your_password();
 Edit_your_name();
