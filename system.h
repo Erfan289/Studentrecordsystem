@@ -4,3 +4,6 @@
 
 
 #endif // SYSTEM_H_INCLUDED
+void system_mode();
+void admin_mode();
+int DECision;
