@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "string.h"
 #include <stdlib.h>
-#include"program.h"
+#include "program.h"
 #include "struct.h"
 
 //DONE----------------
@@ -17,7 +17,7 @@ return adminPass;
 else if(decision==1){
     adminPass = (char *) realloc(adminPass, strlen(newPass) + 1);
     strcpy(adminPass, newPass);
-
+printf("your password has been changed successfully\n\n");
 }else if (decision==2){return adminPass;}
 }
 //this function takes id as an input and return the index of the given id
