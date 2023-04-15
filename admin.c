@@ -12,9 +12,9 @@ char name[100];
     printf("Enter Student's Password:");
     scanf("%s",&student_password);
     printf("What is the Student's Gender? -F for Female/M for Male-");
-    scanf("%c",&gender);
+    scanf("%d",&gender);
     printf("Enter the Student's Age:");
-    scanf("%c",&age);
+    scanf("%d",&age);
     printf("Enter the Student's Grade:");
     scanf("%d",&grade);
     addStudent(name,student_password,grade,student_id,age,gender);
@@ -43,9 +43,10 @@ char* Edit_admin_password(int decision)
     char new_admin_password[20];
     printf("Enter your new password:");
     scanf("%s",&new_admin_password);
-    AdminPassword(new_admin_password,1);}
+    AdminPassword(new_admin_password,1);
+    DECIsion=2; }
     else if(decision==0){
-    return AdminPassword("null",0);
+    return AdminPassword("null",DECIsion);
     }
 }
  void Edit_student_grade()
