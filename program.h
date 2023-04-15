@@ -11,7 +11,7 @@ int myIndex();
 void Name();
 char* Password();
 char* AdminPassword();
-int addStudent();
+void addStudent();
 int lastIndex();
 int newSizeOfClass();
 void editGrade();
