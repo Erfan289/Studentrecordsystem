@@ -1,33 +1,5 @@
 #include "admin.h"
 #include "system.h"
-
-void system_mode()
-{  if(DECision==0){
-    Edit_your_password(0,0);
-    Edit_your_name(0,0);
-    DECision=1;}
-   int mode;
-   do
-   {
-      printf("Please choose the number of the mode : \n");
-      printf("1.Admin  2.User \n");
-      scanf("%d", &mode);
-      if (mode == 1)
-      {
-         admin_mode();
-         break;
-      }
-      else if (mode == 2)
-      {
-         user_mode();
-         break;
-      }
-      else
-         printf("Enter valid mode option !\n");
-   } while (mode != 1 || mode != 2);
-}
-void admin_mode()#include "admin.h"
-#include "system.h"
 #include "user.h"
 
 void system_mode()
