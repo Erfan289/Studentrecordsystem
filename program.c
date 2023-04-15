@@ -4,7 +4,6 @@
 #include "program.h"
 #include "struct.h"
 
-//DONE----------------
 /*this function takes two inputs 1 for editing the password and any thing else to
 set the initial value
 */
