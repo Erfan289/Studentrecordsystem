@@ -153,15 +153,15 @@ char* Password(int id, char *newpass,int Decision) {
         arr[myIndex(id)].password=newpass;
         printf("%s",pass[myIndex(id)]);
         }
-        else {  for(int i=0;i<20;i++){
+  else { int i;
+         for( i=0;i<20;i++){
 
                         if (id==arr[i].id)
                         return pass[i];
 
-        }
+        } if(i==20){return "NULL";}
         }
 }
-
 
 
 void removeStudent(int id) {
