@@ -1,8 +1,8 @@
 #include "admin.h"
 #include "program.h"
  void Add_student_record(){
-char name[20];
-    char student_password[20];
+char *name;
+    char *student_password;
     int student_id,age,grade,gender;
     printf("Enter Student's Name:");
     scanf("%s",&name);
