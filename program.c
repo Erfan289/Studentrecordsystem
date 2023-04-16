@@ -55,16 +55,18 @@ void viewAllRecords() {
 
         }
 
-void viewYourRecord(int id) {
+void viewStudentRecord(int id) {
    int index= myIndex(id);
 
-    printf("Student'sname is : %s\nStudent'sPassword is : %s\nStudent'sDegree is: %d\nStudent'sId is: %d\nStudent'sAge is: %d\nStudent'sGender is: %c\n", name[index],pass[index],arr[index].degree,arr[index].id,arr[index].age,arr[index].gender);
+    printf("Student's name is : %s\nStudent's Password is : %s\nStudent's Degree is: %d\nStudent's Id is: %d\nStudent's Age is: %d\nStudent's Gender is: %c\n", name[index],pass[index],arr[index].degree,arr[index].id,arr[index].age,arr[index].gender);
 
 
 }
-void viewStudentRecord(int id) {
-    int index= myIndex(id);
-    printf("Your Name is : %s\nYour Password is : %s\nYour Degree is: %d\nYour Id is: %d\nYour Age is: %d\nYour Gender is: %c\n", arr[index].name,arr[index].password,arr[index].degree,arr[index].id,arr[index].age,arr[index].gender);
+void viewYourRecord(int id) {
+   int index= myIndex(id);
+
+    printf("your name is : %s\nyour Password is : %s\nyour Degree is: %d\nyour Id is: %d\nyour Age is: %d\nyour Gender is: %c\n", name[index],pass[index],arr[index].degree,arr[index].id,arr[index].age,arr[index].gender);
+
 
 }
 void addStudent(char *Name, char *Password, int degree, int id, int age, int gender) {
