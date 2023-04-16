@@ -167,7 +167,7 @@ void user_mode()
       }
       else
       {
-         printf("Wrong password !\n");
+         printf("Wrong id or password !\n");
          printf("Try again!\n");
       }
       if (user_pass_attempts == 2)
