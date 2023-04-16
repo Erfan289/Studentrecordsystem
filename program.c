@@ -38,25 +38,22 @@ return index;
 }
 //this function will show all the stored records in the system
 void viewAllRecords() {
-
+ int Counter=0;
 
     for (int i = 0; i < 20; i++) {
-            if (arr[i].age==0){
+            if (arr[i].age!=0){
 
 
-            printf("%d :{----name : %s,password: %s ,ID : %d, degree: %d,age: %d,gender: %c----}\n\n", i+1, arr[i].name,arr[i].password
+           Counter++;
+                    printf("%d :{----name : %s,password: %s ,ID : %d, degree: %d,age: %d,gender: %c----}\n\n", Counter, name[i],pass[i]
                    ,arr[i].id, arr[i].degree, arr[i].age, arr[i].gender);
 
-        } else {
-                    printf("%d :{----name : %s,password: %s ,ID : %d, degree: %d,age: %d,gender: %c----}\n\n", i+1, name[i],pass[i]
-                   ,arr[i].id, arr[i].degree, arr[i].age, arr[i].gender);
 
+        }
         }
 
 
         }
-
-    }
 
 void viewYourRecord(int id) {
    int index= myIndex(id);
