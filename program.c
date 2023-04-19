@@ -87,10 +87,10 @@ void addStudent(char *Name, char *Password, int degree, int id, int age, int gen
    arr[newIndex].degree = degree;
    arr[newIndex].id = id;
    arr[newIndex].age = age;
-   if(gender==1){
+   if(gender==Female){
    arr[newIndex].gender = 'F';
 
-   }else if(gender==2){
+   }else if(gender==Male){
    arr[newIndex].gender = 'M';
    } else{printf("invalid choice");}
 
