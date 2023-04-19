@@ -8,22 +8,22 @@
 set the initial value
 */
 char* AdminPassword(char *newPass,int decision) {
- if (decision==0) {
+ if (decision==default_password) {
 adminPass = (char *) malloc(strlen("1234") + 1);
 strcpy(adminPass, "1234");
 return adminPass;
 }
-else if(decision==1){
+else if(decision==editTheAdminPassword){
     adminPass = (char *) realloc(adminPass, strlen(newPass) + 1);
     strcpy(adminPass, newPass);
 printf("your password has been changed successfully\n\n");
-}else if (decision==2){return adminPass;}
+}else if (decision==returnTheNewPassword){return adminPass;}
 }
 //this function takes id as an input and return the index of the given id
 myIndex(int id) {
     int index;
     int i;
-    for ( i = 0; i < 30; i++) {
+    for ( i = 0; i < size_of_class; i++) {
 
         if (arr[i].id == id) {
             index = i;
@@ -40,7 +40,7 @@ return index;
 void viewAllRecords() {
  int Counter=0;
 
-    for (int i = 0; i < 20; i++) {
+    for (int i = 0; i < size_of_class; i++) {
             if (arr[i].age!=0){
 
 
@@ -71,14 +71,14 @@ void viewYourRecord(int id) {
 }
 void addStudent(char *Name, char *Password, int degree, int id, int age, int gender) {
     int i;
-    for ( i = 0; i < 20; i++) {
+    for ( i = 0; i < size_of_class; i++) {
         if (arr[i].id == id) {
             printf("this id already exists\n");
             Add_student_record();
 
         }}
         if(i==20) {
-   if(newSizeOfClass(1)<20){
+   if(newSizeOfClass(1)<size_of_class){
    int newIndex=lastIndex();
    name[newIndex] = (char *) malloc(strlen(Name) + 1);
    strcpy(name[newIndex], Name);
@@ -99,13 +99,13 @@ void addStudent(char *Name, char *Password, int degree, int id, int age, int gen
 //this function takes two inputs 1 for incrementing ,anything else for decrementing
 int newSizeOfClass(int DECISION){
 
-     for (int y  = 0; y <= 20; y++){
+     for (int y  = 0; y <= size_of_class; y++){
     if(arr[y].age!=0){
     counter++;
     }}
         if (DECISION==1){
             counter++;
-            if (counter>=20){
+            if (counter>=size_of_class){
             printf("sorry ,sir the class is full\n");
             return 20;}
             else
@@ -118,7 +118,7 @@ int newSizeOfClass(int DECISION){
         }
 int lastIndex(){
 int i;
- for ( i = 0; i <= 20; i++){
+ for ( i = 0; i <= size_of_class; i++){
     if(arr[i].age==0){
     break;
     }}
@@ -156,7 +156,7 @@ char* Password(int id, char *newpass,int Decision) {
         printf("%s",pass[myIndex(id)]);
         }
   else { int i;
-         for( i=0;i<20;i++){
+         for( i=0;i<size_of_class;i++){
 
                         if (id==arr[i].id)
                         return pass[i];
