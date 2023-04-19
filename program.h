@@ -8,6 +8,8 @@
 #define editTheAdminPassword 1
 #define returnTheNewPassword 2
 #define size_of_class 20
+#define Female 1
+#define Male 2
 void viewAllRecords();
 void viewStudentRecord();
 void viewYourRecord();
