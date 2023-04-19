@@ -6,6 +6,7 @@
 #endif // PROGRAM_H_INCLUDED
 #define default_password 0
 #define editTheAdminPassword 1
+#define returnTheNewPassword 2
 #define size_of_class 20
 void viewAllRecords();
 void viewStudentRecord();
