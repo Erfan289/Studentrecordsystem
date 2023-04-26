@@ -13,7 +13,7 @@ Password(0,"null",0);
 }
     else if (DEcision==1){
     printf("please enter your password : \n");
-    scanf("%s",new_password);
+    input(new_password,30);
     Password(Id, new_password,1);
     printf("your password has been changed successfully!\n");}
 else{
@@ -28,9 +28,10 @@ Name(Id, "null",0);
   }
     else{
     printf("please enter your new name \n");
-    scanf("%s",new_name);
+    input(new_name,30);
     Name(Id,new_name,1);
     printf("your name has been changed successfully!\n");
 }
 }
+
 
