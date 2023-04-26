@@ -4,7 +4,7 @@
 #include "program.h"
 #include "struct.h"
 //this function takes an input from the user
-input(char str[], int n){
+void input(char str[], int n){
 int ch,cha, z=0;
 cha=getchar();
 if(cha=='\n'){
