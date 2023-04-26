@@ -1,9 +1,27 @@
 #include <stdio.h>
-#include "string.h"
+#include <string.h>
 #include <stdlib.h>
 #include "program.h"
 #include "struct.h"
+//this function takes an input from the user
+input(char str[], int n){
+int ch,cha, z=0;
+cha=getchar();
+if(cha=='\n'){
+while((ch=getchar())!='\n')
 
+    if(z<n)
+     str[z++]=ch;
+
+
+str[z]='\0';}
+else{
+    printf("invalid choice , sorry we will log out\n");
+    admin_mode();
+    }
+
+
+}
 /*this function takes two inputs 1 for editing the password and any thing else to
 set the initial value
 */
@@ -153,7 +171,6 @@ char* Password(int id, char *newpass,int Decision) {
         pass[myIndex(id)] = (char *) realloc(pass[myIndex(id)], strlen(newpass) + 1);
         strcpy(pass[myIndex(id)], newpass);
         arr[myIndex(id)].password=newpass;
-        printf("%s",pass[myIndex(id)]);
         }
   else { int i;
          for( i=0;i<size_of_class;i++){
@@ -182,3 +199,4 @@ void removeStudent(int id) {
 
 
 }
+
