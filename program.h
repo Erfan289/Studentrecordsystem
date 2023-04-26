@@ -10,6 +10,7 @@
 #define size_of_class 20
 #define Female 1
 #define Male 2
+void input();
 void viewAllRecords();
 void viewStudentRecord();
 void viewYourRecord();
