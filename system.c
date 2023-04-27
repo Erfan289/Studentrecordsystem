@@ -50,7 +50,7 @@ void admin_mode()
                     5. Edit admin password.\n\
                     6. Edit student grade.\n\
                     7. Return to system options.\n\
-                    8. Exit.\n");
+                    ");
             printf("----------------------------\n");
 
             printf("Enter the number of choice please:");
@@ -86,9 +86,6 @@ void admin_mode()
 
             case 7:
                system_mode();
-               break;
-
-            case 8:
                break;
 
             default:
@@ -131,7 +128,7 @@ void user_mode()
             2. Edit your name.\n\
             3. Edit your password.\n\
             4. Return to system options.\n\
-            5. Exit\n");
+            ");
             printf("----------------------------\n");
             int us_mode_cohice = 0;
             printf("Enter the number of choice please: ");
@@ -154,9 +151,6 @@ void user_mode()
 
             case 4:
                system_mode();
-               break;
-
-            case 5:
                break;
 
             default:
