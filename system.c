@@ -111,7 +111,7 @@ void user_mode()
 
 
    char us_pass[20];
-   int us_id = 0, user_id = 0;
+   int us_id = 0;
    for (int user_pass_attempts = 0; user_pass_attempts < 3; user_pass_attempts++)
    {
       printf("Enter your password please to enter user mode: ");
